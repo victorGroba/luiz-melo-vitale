@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Empreendimentos</title>
+    <link href="./style.css" rel="stylesheet" />
+    <!--=============== BOXICONS ===============-->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <!-- Swiper CSS -->
+    <!-- Link para o CSS do Swiper -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <style>
+        .pdf-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00e676;
+            /* verde neon mais chamativo */
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+            z-index: 999;
+            animation: pulse 2s infinite;
+            /* aqui adiciona o pulso */
+        }
+
+        .whatsapp-button:hover {
+            background-color: #00c853;
+            /* um verde neon mais escuro no hover */
+            transform: scale(1.05);
+        }
+
+        @media screen and (max-width: 768px) {
+            .whatsapp-button {
+                bottom: 120px;
+                
+            }
+        }
+
+
+
+        /* Animação para o botão pulsar */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.7);
+            }
+
+            70% {
+                transform: scale(1.1);
+                box-shadow: 0 0 0 15px rgba(0, 230, 118, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 230, 118, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Início do Carrossel Tela Cheia -->
+
+    <!-- Fim do Carrossel -->
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div>
+                <a href="#">
+                    <img alt="logo" class="logo__header" src="assets/images/logo-vitale.png" />
+                </a>
+            </div>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link activate-link" href="#home">
+                            <i class="bx bx-home-alt-2"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#popular">
+                            <i class="bx bx-building-house"></i>
+                            <span>Empreendimentos</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#value">
+                            <i class="bx bx-award"></i>
+                            <span>Valores</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contact">
+                            <i class="bx bx-phone"></i>
+                            <span>Contato</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--==================== HOME ====================-->
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+            </div>
+            <!-- Container principal do Swiper -->
+            <div class="home__images swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide home__img">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_CLDF8UB6abGTKrH_vhJhTzttMbPI_NrZt1nS9-AbNDMahA/viewform?usp=dialog"
+                            target="_blank"><img alt="" src="assets/images/vitale-arbore-lancamento-camorim.png" /></a>
+                    </div>
+                    <div class="swiper-slide home__img">
+                        <img alt="" src="./assets/images/carioca-banner-home-site-rev.02.png" />
+                    </div>
+                    <div class="swiper-slide home__img">
+                        <img alt="" src="./assets/images/SKY-BANNER.png" />
+                    </div>
+                    <div class="swiper-slide home__img">
+                        <img alt="" src="./assets/images/vitale-walk-lancamento-pechincha-1.png" />
+                    </div>
+                </div>
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+                <!-- Botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="empreendimentos__container container grid">
+                <div class="home__empreendimento">
+                    <h4>Empreendimentos</h4>
+                    <img alt="Construtora Parceira" src="./assets/images/empreendimentos.png" />
+                </div>
+            </div>
+        </section>
+        <!--==================== LOGOS ====================-->
+        <h3 id="h1logos">Entrada Facilitada</h3>
+        <section class="logos section" id="logos">
+            <div class="logos__container container grid">
+                <div class="logos__img">
+                    <img alt="Construtora Parceira" src="./assets/images/vitale-caixa-economica-financiamento.webp" />
+                </div>
+                <div class="logos__img">
+                    <img alt="Construtora Parceira" src="./assets/images/vitale-fgts.webp" />
+                </div>
+            </div>
+        </section>
+        <!--==================== CASAS ====================-->
+        <section class="popular section" id="popular">
+            <div class="container">
+                <span class="section__subtitle">Empreendimentos Disponíveis</span>
+                <h2 class="section__title">
+                    Encontre o Seu Imóvel Ideal<span>.</span>
+                </h2>
+                <span class="section__subtitle">Clique na imagem para saber mais sobre cada item</span>
+                <div class="popular__container swiper">
+                    <div class="swiper-wrapper">
+                        <!-- IMÓVEL 1 -->
+                        <article class="popular__card swiper-slide">
+                            <a href="book_wlalk.html" target="_blank">
+                                <div class="swiper popular__carousel">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img alt="Vitale Walk - imagem 1" class="popular__img"
+                                                src="./assets/images/1-walk.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="Vitale Walk - imagem 2" class="popular__img"
+                                                src="./assets/images/2 -walk.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="Vitale Walk - imagem 3" class="popular__img"
+                                                src="./assets/images/3 - walk.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="Vitale Walk - imagem 4" class="popular__img"
+                                                src="./assets/images/4 - walk.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev-inner"><i class="fas fa-chevron-left"></i></div>
+                                    <div class="swiper-button-next-inner"><i class="fas fa-chevron-right"></i></div>
+                                </div>
+                            </a>
+                            <div class="popular__data">
+                                <h1 class="popular__title">PECHINCHA, RJ - ENTREGA DEZ/27</h1>
+                                <h2 class="popular__price">
+                                    <div style="text-align: center;"><span>1 Quarto à partir de R$</span>229.000 </div>
+                                    <div style="text-align: center;"><span>2 Quartos à partir de R$</span>269.000</div>
+                                </h2>
+                            </div>
+                        </article>
+                        <!-- IMÓVEL 2 -->
+                        <article class="popular__card swiper-slide">
+                            <a href="book_park.html" target="_blank">
+                                <div class="swiper popular__carousel">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/1-park.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/2-park.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/3-park.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/4-park.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev-inner"><i class="fas fa-chevron-left"></i></div>
+                                    <div class="swiper-button-next-inner"><i class="fas fa-chevron-right"></i></div>
+                                </div>
+                                <div class="popular__data">
+                                    <h1 class="popular__title">FREGUESIA (JPA), RJ - ENTREGA OUT/27</h1>
+                                    <h2 class="popular__price">
+                                        <div style="text-align: center;"><span>1 Quarto à partir de R$</span>229.000
+                                        </div>
+                                        <div style="text-align: center;"><span>2 Quartos à partir de R$</span>269.000
+                                        </div>
+                                    </h2>
+                                </div>
+                            </a>
+                        </article>
+                        <!-- IMÓVEL 3 -->
+                        <article class="popular__card swiper-slide">
+                            <a href="book_sky.html" target="_blank">
+                                <div class="swiper popular__carousel">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/1-sk.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/2-sky.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/3-sky.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/4-sky.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev-inner"><i class="fas fa-chevron-left"></i></div>
+                                    <div class="swiper-button-next-inner"><i class="fas fa-chevron-right"></i></div>
+                                </div>
+                                <div class="popular__data">
+                                    <h1 class="popular__title"> IRAJÁ, RJ - ENTREGA NOV/26 </h1>
+                                    <h2 class="popular__price">
+                                        <div style="text-align: center;"><span>2 Quartos à partir de R$</span>267.000
+                                        </div>
+                                        <div style="text-align: center;"><span>Gardens 1 Quarto à partir de
+                                                R$</span>306.000
+                                        </div>
+                                        <div style="text-align: center;"><span>Cobertura à partir de R$</span>430.000
+                                        </div>
+                                    </h2>
+                                </div>
+                            </a>
+                        </article>
+                        <!-- IMÓVEL 4 -->
+                        <article class="popular__card swiper-slide">
+                            <a href="book_carioca.html" target="_blank">
+                                <div class="swiper popular__carousel">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/1-carioca.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/2-carioca.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/3-carioca.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/4-carioca.jpg" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev-inner"><i class="fas fa-chevron-left"></i></div>
+                                    <div class="swiper-button-next-inner"><i class="fas fa-chevron-right"></i></div>
+                                </div>
+                                <div class="popular__data">
+                                    <h1 class="popular__title"> VILA KOSMOS, RJ - ENTREGA ABR/26</h1>
+                                    <h2 class="popular__price">
+                                        <div style="text-align: center;"><span>2 Quartos à partir de R$</span>259.000
+                                        </div>
+                                        <div style="text-align: center;"><span>Gardens 1 Quarto à partir de
+                                                R$</span>300.000
+                                        </div>
+                                    </h2>
+                                </div>
+                            </a>
+                        </article>
+                        <!-- IMÓVEL 5 -->
+                        <article class="popular__card swiper-slide">
+                            <a href="book_americas.html" target="_blank">
+                                <div class="swiper popular__carousel">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/1-REC.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/2-REC.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/3-REC.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img alt="" class="popular__img" src="./assets/images/4-REC.jpg" />
+                                        </div>
+                                        <div class="swiper-button-prev-inner"><i class="fas fa-chevron-left"></i></div>
+                                        <div class="swiper-button-next-inner"><i class="fas fa-chevron-right"></i></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="popular__data">
+                                <h1 class="popular__title"> RECREIO, RJ - LOTES DE ALTO PADRÃO <br /> ÁREAS PRIVATIVAS
+                                    ENTREGA DEZ/2025 <br /> CLUBE + ÁREA LAZER DEZ/26</h1>
+                                <h2 class="popular__price">
+                                    <div style="text-align: center;"><span>VALORES ENTRE EM CONTATO</span>
+                                    </div>
+                                </h2>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <a class="whatsapp-button" href="https://wa.me/5521995897512?text=Ol%C3%A1%2C+acabei+de+visualizar+o+Book+do+empreendimento+Vitale+Walk+e+gostaria+de+mais+informa%C3%A7%C3%B5es%21
+    " target="_blank">
+            <i class="bx bxl-whatsapp"></i> Atendimento Imediato
+        </a>
+        <!--==================== VALUE ====================-->
+        <section class="value section" id="value">
+            <div class="value__container container grid">
+                <div class="value__images">
+                    <div class="value__orbe"></div>
+                    <div class="value__img">
+                        <img alt="" src="./assets/images/valores-foto.jpg" />
+                    </div>
+                </div>
+                <div class="value__content">
+                    <div class="value_data">
+                        <span class="section__subtitle">Nossos Valores</span>
+                        <h2 class="section__title">
+                            Damos valor a você<span>.</span>
+                        </h2>
+                        <p class="value__description">
+                            Estamos sempre prontos em ajudar a encontrar o melhor lugar para sua vida.
+                        </p>
+                        <!--Item 1-->
+                        <div class="value__accordion">
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bxs-star value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        Os melhores imóveis para você.
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bxs-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Imóveis de qualidade em regiões privilegiadas.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--Item 2-->
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bxs-bar-chart-square value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        Os melhores preços do mercado.
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bxs-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Buscamos sempre as melhores ofertas do mercado, para que você possa encontrar
+                                        seu lar com as melhores condições.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--Item 3-->
+                            <div class="value__accordion-item">
+                                <header class="value__accordion-header">
+                                    <i class="bx bxs-check-square value__accordion-icon"></i>
+                                    <h3 class="value__accordion-title">
+                                        Seus dados seguros
+                                    </h3>
+                                    <div class="value__accordion-arrow">
+                                        <i class="bx bxs-down-arrow"></i>
+                                    </div>
+                                </header>
+                                <div class="value__accordion-content">
+                                    <p class="value__accordion-description">
+                                        Garantimos sua privacidade mantendo seus dados seguros sem qualquer
+                                        compartilhamento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__images">
+                    <div class="contact__orbe"></div>
+                    <div class="contact__img">
+                        <img alt="Contato" src="./assets/images/luiz_melo.jpg" />
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <div class="contact__data">
+                        <span class="section__subtitle">Contato</span>
+                        <h2 class="section__title">
+                            Entre em contato<span>.</span>
+                        </h2>
+                        <p class="contact__description">
+                            Quer sair do aluguel e conquistar a casa própria?
+                            Tenho excelentes oportunidades esperando por você! Seja para comprar sua primeira casa,
+                            encontrar a casa dos sonhos ou investir com segurança no mercado imobiliário, estou aqui
+                            para te ajudar.
+                            Entre em contato e dê o primeiro passo rumo ao seu novo lar!
+                        </p>
+                    </div>
+                    <div class="contact__card">
+                        <!--Contato telefone-->
+                        <div class="contact_card-box">
+                            <div class="contact__card-info">
+                                <i class="bx bxs-phone-call"></i>
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Telefone
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        21-99589-7512
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="tel:+5561999999999">
+                                <button class="contact__card-button">
+                                    Ligue Agora
+                                </button>
+                            </a>
+                        </div>
+                        <!--Contato WhatsApp-->
+                        <div class="contact_card-box">
+                            <div class="contact__card-info">
+                                <i class="bx bxl-whatsapp"></i>
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        Chat
+                                    </h3>
+                                    <p class="contact__card-description">
+                                        21-99589-7512
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/5521995897512" target="_blank">
+                                <button class="contact__card-button">
+                                    WhatsApp
+                                </button>
+                            </a>
+                        </div>
+                        <!--Contato Email-->
+                        <div class="contact_card-box">
+                            <div class="contact__card-info">
+                                <i class="bx bxs-envelope"></i>
+                                <div>
+                                    <h3 class="contact__card-title">
+                                        E-mail
+                                    </h3>
+                                    <p class="contact__card-description">
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="mailto:jonathancosta746@gmail.com">
+                                <button class="contact__card-button">
+                                    Mensagem
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--==================== APPOINTMENT ====================-->
+        <section class="appointment section">
+            <div class="appointment-container container">
+                <div class="info">
+                    <h2>FAÇA UM SIMULAÇÃO<span>.</span></h2>
+                    <p>Mande uma mensagem que entraremos em contato o mais breve possivel.</p>
+                </div>
+                <a href="https://wa.me/5521995897512?text=Ol%C3%A1%2C+acabei+de+visualizar+o+Book+do+empreendimento+Vitale+Walk+e+gostaria+de+mais+informa%C3%A7%C3%B5es%21
+                " target="_blank">
+                    <input class="btn-primary" type="submit" value="Enviar Mensagem" />
+                </a>
+            </div>
+        </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a class="footer__logo" href="#">
+                        Luiz Melo <br /> CRECI RJ 78913<i class="bx bxs-home-alt-2"></i>
+                    </a>
+                    <p class="footer__description">
+                        Minha missão é fazer as pessoas <br />
+                        encontrarem o melhor lugar para viver.
+                    </p>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Novidades
+                    </h3>
+                    <ul class="footer__social">
+                        <a class="footer__social-link" href="https://www.youtube.com/user/JonathanCosta746"
+                            target="_blank">
+                            <i class="bx bxl-youtube"></i>
+                        </a>
+                        <a class="footer__social-link" href="https://www.instagram.com/luiz.hailton.melo/"
+                            target="_blank">
+                            <i class="bx bxl-instagram-alt"></i>
+                        </a>
+                        <a class="footer__social-link" href="https://www.tiktok.com/" target="_blank">
+                            <i class="bx bxl-tiktok"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__info">
+                <span class="footer__copy">
+                    © Groba Tech. Todos os direitos reservados.
+                </span>
+            </div>
+        </footer>
+        <!--========== SCROLL UP ==========-->
+        <a class="scrollup" href="#" id="scroll-up">
+            <i class="bx bx-chevrons-up"></i>
+        </a>
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--=============== SWIPER ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!--=============== MAIN JS ===============-->
+        <script src="./assets/js/main.js"></script>
+    </main>
+</body>
+
+</html>

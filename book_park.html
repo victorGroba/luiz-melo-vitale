@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book do Imóvel</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #00e676;
+            color: white;
+            border: none;
+            padding: 25px 60px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s, transform 0.3s;
+            z-index: 999;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #00c853;
+            transform: translateX(-50%) scale(1.05);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translateX(-50%) scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.7);
+            }
+
+            70% {
+                transform: translateX(-50%) scale(1.1);
+                box-shadow: 0 0 0 25px rgba(0, 230, 118, 0);
+            }
+
+            100% {
+                transform: translateX(-50%) scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 230, 118, 0);
+            }
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .whatsapp-button {
+                font-size: 18px;
+                padding: 18px 30px;
+                bottom: 15px;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pdf-container">
+        <iframe src="./assets/pdf/Vitale Park residence (3).pdf" frameborder="0"></iframe>
+    </div>
+
+    <a class="whatsapp-button" href="https://wa.me/5521995897512?text=Ol%C3%A1%2C+acabei+de+visualizar+o+Book+do+empreendimento+Vitale+Park+e+gostaria+de+mais+informa%C3%A7%C3%B5es%21" target="_blank">
+        <i class='bx bxl-whatsapp' style="font-size: 28px;"></i> Atendimento Imediato
+    </a>
+
+</body>
+
+</html>
