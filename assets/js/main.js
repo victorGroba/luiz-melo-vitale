@@ -89,12 +89,13 @@ const scrollHeader = () => {
   
   /*=============== SCROLL REVEAL ANIMATION ===============*/
   const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    reset: true
-  });
+  origin: 'top',
+  distance: '20px',   // movimento menor
+  duration: 800,       // animação mais rápida
+  delay: 100,          // começa logo ao aparecer
+  reset: false         // evita reaparecer sempre que rola
+});
+
   
   sr.reveal(`.home__title, .popular__container, .appointment-container, .footer__container`);
   sr.reveal(`.home__description, .footer__info`, { delay: 500 });
