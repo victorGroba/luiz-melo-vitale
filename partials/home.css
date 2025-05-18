@@ -1,0 +1,236 @@
+/*=============== HOME ===============*/
+.home {
+  background: linear-gradient(170deg, hsl(0, 0%, 96%) 0%, hsl(46, 60%, 64%) 30%);
+  padding-bottom: 0;
+}
+
+.home__container {
+  padding-top: 2rem;
+  row-gap: 3.5rem;
+}
+
+.home__title,
+.home__value-number {
+  color: #fff;
+}
+
+.home__empreendimento {
+  color: #fff;
+  font-size: var(--biggest-font-size);
+  line-height: 120%;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+}
+
+.home__description {
+  color: var(--text-color-light);
+  margin-bottom: 2rem;
+}
+
+.home__value {
+  display: flex;
+  column-gap: 2.5rem;
+}
+
+.home__value-number {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+}
+
+.home__value-number span {
+  color: var(--second-color);
+}
+
+.home__value-description {
+  display: flex;
+  color: var(--text-color-light);
+  font-size: var(--smaller-font-size);
+}
+
+/*=============== HOME SWIPER ===============*/
+.home__images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100vw;
+  height: auto;
+  max-height: 100vh;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.home__images .swiper-wrapper {
+  display: flex;
+}
+
+.home__images .swiper-slide.home__img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 0;
+  position: relative;
+}
+
+.home__images .swiper-slide.home__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Botões de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+
+/* Paginação */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/*=============== HOME ORBE ===============*/
+.home__orbe {
+  width: 266px;
+  height: 316px;
+  background-color: hsl(228, 24%, 97%);
+  border-radius: 135px 135px 16px 16px;
+}
+
+.empreendimentos__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 400px) {
+  .home {
+    padding-bottom: 0;
+  }
+
+  .home__value {
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home__value {
+    column-gap: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+  }
+
+  .home__orbe {
+    align-self: flex-end;
+  }
+
+  .home__data {
+    padding-bottom: 2rem;
+  }
+}
+
+.home__empreendimento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.home__empreendimento h4 {
+  font-size: var(--biggest-font-size);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.home__empreendimento img {
+  width: 600px;
+  height: auto;
+}
+
+/* Melhorar o container dos empreendimentos */
+.logos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* For large devices */
+@media screen and (min-width: 1020px) {
+  .home {
+    padding-bottom: 0;
+  }
+
+  .home__container {
+    padding-top: 5rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home__data {
+    padding-bottom: 4rem;
+  }
+
+  .home__title {
+    margin-bottom: 2rem;
+  }
+
+  .home__empreendimento {
+    margin-bottom: 2rem;
+  }
+
+  .home__description,
+  .home__search {
+    margin-bottom: 3rem;
+  }
+
+  .home__value {
+    column-gap: 3.5rem;
+  }
+
+  .home__orbe {
+    width: 504px;
+    height: 611px;
+    border-radius: 256px 256px 0 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home__empreendimento h4 {
+    font-size: var(--h2-font-size);
+  }
+
+  .entrada-facilitada {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logos__img img {
+    height: 60px;
+  }
+}
