@@ -178,3 +178,78 @@
     padding: 28px 1.5rem 1.5rem;
   }
 }
+/* === Destaque visual para as informações de contato === */
+
+.contact__card-info {
+  font-size: 1.1rem;
+}
+
+.contact__card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0a1f44;
+}
+
+.contact__card-description {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.contact__card-button {
+  font-size: 1.1rem;
+  padding: 0.9rem 1.2rem;
+  font-weight: bold;
+  background-color: #4b73f0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact__card-button:hover {
+  background-color: #3b63d0;
+  transform: scale(1.05);
+}
+
+.contact__card-box {
+  background-color: #f0f4ff;
+  border: 2px solid #d0dffe;
+}
+
+
+/* === Responsividade para mobile (Contato) === */
+
+@media screen and (max-width: 600px) {
+  .contact__card-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .contact__card-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contact__card-button {
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .contact__card-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact__card i {
+    margin-bottom: 0.5rem;
+  }
+
+  .contact__card-box {
+    padding: 1rem;
+    text-align: center;
+  }
+}
